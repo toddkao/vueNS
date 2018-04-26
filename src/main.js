@@ -1,7 +1,8 @@
 import Vue from 'nativescript-vue';
 
-import HelloWorld from './components/HelloWorld';
+import router from './router';
 
+import store from './store';
 
 import './styles.scss';
 
@@ -10,7 +11,8 @@ import './styles.scss';
 
 new Vue({
 
-  render: h => h(HelloWorld),
+  router,
 
+  store,
 
 }).$start();
